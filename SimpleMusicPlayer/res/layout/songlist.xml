@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<TableRow android:padding="3dip" android:layout_width="wrap_content">
+		<TextView android:id="@id/android:empty" 
+		android:text="No songs found on SD Card." 
+		android:layout_height="fill_parent" 
+		android:layout_width="fill_parent"></TextView>
+	
+		<ListView android:id="@id/android:list"
+              android:layout_width="match_parent" 
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:drawSelectorOnTop="false"/>
+	</TableRow>
+	
+	<TableRow android:padding="3dip" android:layout_width="wrap_content">
+	
+	<TextView android:text="Now playing" 
+	android:id="@+id/txtNow" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" android:visibility="invisible"></TextView>
+	</TableRow>
+	
+	<TableRow android:padding="3dip" android:layout_width="wrap_content">
+	
+	<Button android:text="Pause" 
+	android:id="@+id/btnPause" 
+	android:layout_height="37dip"
+	android:layout_width="0dip"
+	android:layout_weight="0.5"></Button>
+	
+	<Button android:text="Continue" 
+	android:id="@+id/btnContinue" 
+	android:layout_height="37dip"
+	android:layout_width="0dip"
+	android:layout_weight="0.5"></Button>
+	
+	<Button android:text="Stop" 
+	android:id="@+id/btnStop" 
+	android:layout_height="37dip"
+	android:layout_width="0dip"
+	android:layout_weight="0.5" 
+	android:enabled="false"></Button>
+	</TableRow>
+	
+	<TableRow android:padding="3dip" android:layout_width="wrap_content">
+		<Button android:text="Previous Song" 
+		android:id="@+id/btnPrevious" 
+		android:layout_width="0dip" 
+		android:layout_height="37dip"
+		android:layout_weight="0.5" 
+		android:enabled="false"></Button>
+		
+		<Button android:text="Next Song" 
+		android:id="@+id/btnNext" 
+		android:layout_width="0dip" 
+		android:layout_height="37dip"
+		android:layout_weight="0.5" 
+		android:enabled="false"></Button>
+	</TableRow>
+	
+	
+	
+</TableLayout>
