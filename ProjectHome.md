@@ -1,0 +1,1 @@
+Simple Media Player who load the songs from SD card
